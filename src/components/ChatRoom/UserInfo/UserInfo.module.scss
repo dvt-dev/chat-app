@@ -1,0 +1,35 @@
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 36px;
+  border-bottom: 1px solid #ddd;
+  
+  img {
+    background-color: #333;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .user {
+    margin-right: 100px;
+
+    .user-name {
+      font-size: 2rem;
+    }
+
+    .user-des {
+      margin-top: 10px;
+      font-size: 1.4rem;
+      color: #b1afaf;
+    }
+  }
+
+  .icon-logout {
+    background-color: #faf9fe;
+  }
+  
+}

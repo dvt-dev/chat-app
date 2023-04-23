@@ -1,0 +1,28 @@
+.search {
+  margin-top: 20px;
+
+  .search-container {
+    // height: 40px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 12px;
+
+    .search-icon {
+      font-size: 1.8rem;
+      color: #bababa;
+      margin-right: 10px;
+    }
+
+    .search-input {
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 1.6rem;
+      font-family: 'Montserrat', sans-serif;
+      
+    }
+  }
+}
+

@@ -19,3 +19,15 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
 }
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.icon {
+  border: none;
+  background-color: #faf9fe;
+  font-size: 3rem;
+  color: #bababa;
+}

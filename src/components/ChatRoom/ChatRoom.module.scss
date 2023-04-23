@@ -1,0 +1,19 @@
+
+.home {
+  background-color: #fff;
+  height: 100vh;
+
+  .container {
+    display: flex;
+  }
+
+  .side-bar {
+    width: 420px;
+    background-color: #faf9fe;
+    height: 100vh;
+  }
+
+  .chat {
+    flex: 1;
+  }
+}

@@ -12,8 +12,12 @@ const ChatRoom = () => {
   return (
     <div className={cx('home')}>
       <div className={cx('container')}>
-        <SideBar />
-        <Chat />
+        <div className={cx('side-bar')}>
+          <SideBar /> 
+        </div>
+        <div className={cx('chat')}>
+          <Chat />  
+        </div>
       </div>
     </div>
   )

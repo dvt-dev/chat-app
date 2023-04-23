@@ -1,0 +1,53 @@
+
+.rooms-wrapper {
+  padding: 36px;
+
+  .header-rooms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .text {
+    font-size: 2rem;
+    }
+
+  .icon-add-room {
+    background-color: #faf9fe;
+  }
+  }
+
+  .room-chat {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 0;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #fff;
+    }
+
+    .room-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #333;
+      object-fit: cover;
+    }
+
+    .room-info {
+      margin-left: 20px;
+    }
+
+    .room-name {
+      padding-bottom: 10px;
+    }
+
+    .room-des {
+      font-size: 1.4rem;
+      color: #b1afaf;
+    }
+  }
+}
+

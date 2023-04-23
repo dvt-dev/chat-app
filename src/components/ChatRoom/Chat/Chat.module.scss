@@ -1,0 +1,34 @@
+.chat-container {
+  background-color: #fff;
+  height: 100vh;
+  
+
+  .header-chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px ;
+    padding: 0 30px;
+    border-bottom: 1px solid #ddd;
+
+    .chat-name {
+      font-weight: 600;
+    }
+
+    .chat-icons {
+      display: flex;
+  
+      .add-user-icon {
+        margin-right: 16px;
+      }
+  
+      .add-user-icon, .more-icon {
+        background-color: #fff;
+      }
+  }
+
+  }
+
+ 
+
+}
