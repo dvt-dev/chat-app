@@ -1,6 +1,6 @@
 
 .rooms-wrapper {
-  padding: 36px;
+  padding: 24px;
 
   .header-rooms {
   display: flex;
@@ -17,20 +17,20 @@
   }
 
   .room-chat {
-    margin-top: 16px;
     display: flex;
     align-items: center;
+    // justify-content: space-between;
     width: 100%;
-    padding: 12px 0;
+    padding: 10px 0;
     cursor: pointer;
     
     &:hover {
-      background-color: #fff;
+      background-color: #f3f3f5;
     }
 
     .room-avatar {
-      width: 60px;
-      height: 60px;
+      width: 56px;
+      height: 56px;
       border-radius: 50%;
       background-color: #333;
       object-fit: cover;
@@ -38,16 +38,28 @@
 
     .room-info {
       margin-left: 20px;
+
+      .room-name {
+        font-weight:600;
+        padding-bottom: 10px;
+      }
+  
+      .room-des {
+        font-size: 1.4rem;
+        color: #b1afaf;
+      }
     }
 
-    .room-name {
-      padding-bottom: 10px;
-    }
-
-    .room-des {
-      font-size: 1.4rem;
+    .room-times {
+      margin-left: auto;
       color: #b1afaf;
     }
+
+    
+
+    
+
+    
   }
 }
 

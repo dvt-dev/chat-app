@@ -1,6 +1,6 @@
 .messages-container {
-  background-color: #333;
-  padding: 20px 32px;
-  height: calc(100% - 160px);
-
+  padding: 20px 24px;
+  height: calc(100% - 135px);
+  overflow: scroll;
+  overflow-x: hidden;
 }

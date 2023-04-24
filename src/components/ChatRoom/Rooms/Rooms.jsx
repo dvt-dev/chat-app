@@ -23,13 +23,26 @@ const Rooms = () => {
         </div>
 
         <div className={cx('room-list')}>
+          
           <div className={cx('room-chat')}>
             <img src="" alt="room-avatar" className={cx('room-avatar')} />
             <div className={cx('room-info')}>
-              <h4 className={cx('room-name')}>Phúc</h4>
-              <p className={cx('room-des')}>Ban: hello world</p>
+              <h4 className={cx('room-name')}>Group #1</h4>
+              <p className={cx('room-des')}>Ban: hello</p>
             </div>
+            <p className={cx('room-times')}>9:32</p>
           </div>
+
+          <div className={cx('room-chat')}>
+            <img src="" alt="room-avatar" className={cx('room-avatar')} />
+            <div className={cx('room-info')}>
+              <h4 className={cx('room-name')}>Group #1</h4>
+              <p className={cx('room-des')}>Ban: wow, that's an ...</p>
+            </div>
+            <p className={cx('room-times')}>9:32</p>
+          </div>
+          
+          
         </div>       
       </div>
     </>

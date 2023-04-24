@@ -27,7 +27,27 @@ button:hover {
 
 .icon {
   border: none;
-  background-color: #faf9fe;
-  font-size: 3rem;
+  background-color: transparent;
+  font-size: 2.4rem;
   color: #bababa;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #999; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

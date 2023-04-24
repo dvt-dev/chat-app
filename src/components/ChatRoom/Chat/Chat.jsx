@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './Chat.module.scss';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import styles from './Chat.module.scss';
 import Messages from '../Messages/Messages';
 import MessageForm from '../MesageForm/MessageForm';
 
@@ -19,7 +19,7 @@ const Chat = () => {
           </button>
           <button className={cx('icon', 'more-icon')}>
             <FontAwesomeIcon icon={faEllipsis}></FontAwesomeIcon>
-          </button>
+          </button>      
         </div>
       </header>
 
