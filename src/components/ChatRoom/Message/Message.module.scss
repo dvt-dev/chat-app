@@ -1,0 +1,307 @@
+.wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin: 16px 12px 0;
+}
+
+// Xử lý tin nhắn liên tục của 1 người dùng
+// Gửi tin nhắn
+.wrapper.sent {
+  .user-img {
+    display: none;
+  }
+  .user-name {
+    display: none;
+  }
+  .user-name.replyUserName {
+    display: block;
+    margin-top: 12px;
+    text-align: right;
+  }
+
+  .text-wrap {
+    align-items: flex-end;
+  }
+
+  .text-inner {
+    background-color: var(--primary);
+    color: #fff;
+    .text-link {
+      color: #fff;
+    }
+  }
+  flex-direction: row-reverse;
+
+  &.first-message {
+    .text-inner {
+      border-radius: 20px 20px 6px 20px;
+    }
+  }
+
+  &.middle-message {
+    .text-inner {
+      border-radius: 20px 6px 6px 20px;
+    }
+  }
+
+  &.last-message {
+    .text-inner {
+      border-radius: 20px 6px 20px 20px;
+    }
+  }
+
+  &.middle-message,
+  &.last-message {
+    margin: 2px 12px 0;
+  }
+}
+
+// Nhận tin nhắn
+.wrapper.received {
+  &.first-message {
+    .user-img {
+      display: none;
+    }
+
+    .text-inner {
+      border-radius: 20px 20px 20px 6px;
+    }
+  }
+
+  &.middle-message {
+    .user-img {
+      display: none;
+    }
+
+    .user-name {
+      display: none;
+    }
+
+    .user-name.replyUserName {
+      display: block;
+      margin-top: 12px;
+    }
+
+    .text-inner {
+      border-radius: 6px 20px 20px 6px;
+    }
+  }
+
+  &.last-message {
+    .user-name {
+      display: none;
+    }
+
+    .user-name.replyUserName {
+      display: block;
+      margin-top: 12px;
+    }
+
+    .text-inner {
+      border-radius: 6px 20px 20px 20px;
+    }
+  }
+
+  &.middle-message,
+  &.last-message {
+    margin: 2px 12px 0;
+  }
+
+  &.first-message,
+  &.middle-message {
+    margin-left: 42px;
+  }
+}
+
+.user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+}
+
+.wrapper.isHasIcon {
+  .user-img {
+    margin-bottom: 20px;
+  }
+}
+
+.time {
+  min-height: 24px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 200;
+}
+
+.content {
+  margin-left: 8px;
+  max-width: 80%;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--text-gray);
+  margin-left: 16px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.text {
+  position: relative;
+  display: flex;
+}
+
+.wrapper.isHasIcon {
+  .text {
+    margin-bottom: 20px;
+  }
+}
+
+.text-inner {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--text-black);
+  background-color: var(--message-gray);
+  padding: 8px 16px;
+  border-radius: 20px;
+  word-break: break-word;
+  animation: popup 0.2s ease forwards;
+  transition: all 0.2s ease;
+  // Với tin nhắn gửi là 100%
+  transform-origin: 0%;
+
+  .text-link {
+    text-decoration: underline;
+    font-size: 1.6rem;
+    color: var(--text-black);
+  }
+}
+
+.unsent-message {
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: var(--medium-gray);
+  padding: 8px 16px;
+  border: 1px solid var(--medium-gray);
+  border-radius: 20px;
+  animation: popup 0.2s ease forwards;
+}
+
+.text-inner.message-photo {
+  padding: 0;
+}
+
+.message-photo {
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 220px;
+  max-height: 220px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  transition: all 0.1s ease;
+  background-color: #fff !important;
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+}
+
+.message-video {
+  max-width: 280px;
+  max-width: 280px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  transition: all 0.1s ease;
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+}
+
+.message-video-play-icon {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  background-color: #fff;
+  border-radius: 999px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.sticker-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+// Message Controls
+.message-controls {
+  position: absolute;
+  // z-index: 9999px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  user-select: none;
+}
+
+.wrapper.sent {
+  .message-controls {
+    left: -88px;
+    flex-direction: row-reverse;
+  }
+}
+
+.wrapper.received {
+  .message-controls {
+    right: -88px;
+  }
+  .onlyReaction {
+    right: -60px;
+  }
+}
+
+.wrapper:hover .message-controls {
+  display: flex;
+}
+
+.wrapper.active .message-controls {
+  display: flex;
+}
+
+// Reply Message
+.reply {
+  position: relative;
+  bottom: -8px;
+  padding: 10px 16px;
+  background-color: var(--light-gray);
+  border-radius: 20px 20px 8px 8px;
+  font-size: 1.4rem;
+  color: var(--dark-gray);
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
