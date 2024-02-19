@@ -1,6 +1,6 @@
 # Satellite - Chat app (Messenger clone)
 
-🚀 Deploy: https://www.xuanphuc.space
+🚀 Deploy: https://chat-app-fake.vercel.app/login
 
 ### ⚙️ Technologies:
 - ReactJS
